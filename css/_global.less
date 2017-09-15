@@ -1,0 +1,258 @@
+@import "_variables.less";
+body {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.container {
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+
+    @media (min-width: 850px) {
+        width: 830px;
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+
+    @media (min-width: 1400px) {
+        width: 1370px;
+    }
+}
+
+h1 {
+    color: #ffffff;
+    font-family: @header-font;
+    font-size: 30px;
+    margin-top: 0px;
+
+    @media (min-width: 320px) {
+        font-size: 25px;
+    }
+
+    @media (min-width: 600px) {
+        font-size: 28px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 32px;
+    }
+}
+
+h2 {
+    color: @teal;
+    font-family: @header-font;
+    font-size: 26px;
+    margin-top: 0px;
+}
+
+h3 {
+    color: #fff;
+    margin: 0px;
+    font-family: @span-text;
+
+    @media (min-width: 320px) {
+        font-size: 21px;
+    }
+
+    @media (min-width: 600px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 26px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 28px;
+    }
+}
+
+p {
+    font-size: 17px;
+    color: @body-copy;
+    font-family: @body-font;
+}
+
+a {
+    outline: 0;  
+}
+
+.btn {
+    font-weight: inherit;
+    border: 0px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: @button-text;
+    min-height: 40px;
+    border-radius: 2px;
+    .transition;
+}
+
+.btn-main {
+    background-color: @teal;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background-color: @teal-hover;
+    }
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: @teal;
+
+    &:hover {
+        color: @teal-hover;
+        background-color: #fff;
+    }
+}
+
+.raised-text {
+    font-family: @span-text;
+    color: @teal;
+}
+
+.bold {
+    font-family: @header-font;
+}
+
+.header-separator {
+    width: 55px;
+    height: 1px;
+    background-color: @teal;
+    margin-bottom: 15px;
+}
+
+.btn-group {
+    a:hover {
+        text-decoration: none;
+    }
+    .responsive-btn;
+
+    a:last-child {
+        .btn {
+            margin-bottom: 0px !important;
+        }
+    }
+}
+
+.text-left-media-right, .text-right-media-left, .flat-row {
+    margin: 0px;
+    padding: 65px 0px;
+
+    video, img {
+        width: 100%;
+    }
+
+    p:last-child {
+        margin-bottom: 0px;
+    }
+
+    .col-header {
+        @media (min-width: 320px) {
+            margin-top: 25px;
+        }
+
+        @media (min-width: 992px) {
+            margin-top: 0px;
+        }
+    }
+}
+
+.secondary-footer {
+    padding: 30px 0px;
+    margin: 0px;
+
+    .footer-logo {
+        @media (min-width: 320px) {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        @media (min-width: 992px) {
+            text-align: left;
+            padding-bottom: 0px;
+        }
+
+        img {
+            width: 70px;
+        }
+    }
+
+    .footer-text {
+        text-align: center;
+
+        p {
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .footer-links {
+        ul {
+            padding: 0px;
+            margin: 0px;
+
+            @media (min-width: 320px) {
+                text-align: center;
+                padding-top: 15px;
+            }
+
+            @media (min-width: 992px) {
+                text-align: right;
+                padding-top: 0px;
+            }
+
+            li {
+                display: inline;
+                font-family: @body-font;
+
+                a {
+                    font-family: @body-font;
+                    color: @teal;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.clear-row {
+    background-color: #fff;
+}
+
+.grey-row {
+    background-color: @grey-row;
+}
+
+.hidden-desktop {
+    @media (min-width: 320px) {
+        display: inherit;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.hidden-mobile {
+    @media (min-width: 320px) {
+        display: none;
+    }
+
+    @media (min-width: 992px) {
+        display: inherit;
+    }
+}

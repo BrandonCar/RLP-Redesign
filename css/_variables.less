@@ -1,0 +1,67 @@
+/* VARIABLES */
+
+//Colors
+@body-copy: #28313B;
+@dark-blue: #1867B1;
+@dark-green: #799D48;
+@red: #550A04;
+@teal: #36AED7;
+@teal-hover: darken(@teal, 5%);
+@light-green: #B8E986;
+@grey-background: #DDD;
+@grey-row: fade(@grey-background, 30%);
+@dark-gradient: #45B7DA;
+@light-gradient: #4FD0F8;
+@dark-overlay: fade(#2D2D30, 80%);
+
+
+//Fonts
+@header-font: 'Muli Bold';
+@button-text: 'Muli Bold';
+@body-font: 'Muli';
+@span-text: 'Muli Semibold';
+@footer-text: 'Muli Semibold';
+@nav-text: 'Muli Semibold';
+@active: 'Muli Extra Bold';
+
+
+/* MIXINS */
+.blue-gradient {
+    background: @dark-gradient;
+    background: -moz-linear-gradient(-45deg, @dark-gradient 0%, @light-gradient 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, @dark-gradient), color-stop(100%, @light-gradient));
+    background: -webkit-linear-gradient(-45deg, @dark-gradient 0%, @light-gradient 100%);
+    background: -o-linear-gradient(-45deg, @dark-gradient 0%, @light-gradient 100%);
+    background: -ms-linear-gradient(-45deg, @dark-gradient 0%, @light-gradient 100%);
+    background: linear-gradient(135deg, @dark-gradient 0%, @light-gradient 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@dark-gradient', endColorstr='@light-gradient', GradientType=1 );
+}
+
+.hero-row {
+    margin: 0px;
+}
+
+.full-width-row {
+    margin: 0px;
+    padding: 40px 0px;
+}
+
+.transition {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.responsive-btn {
+    @media (min-width: 320px) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 550px) {
+        width: initial;
+        margin-bottom: 0px;
+    }
+}

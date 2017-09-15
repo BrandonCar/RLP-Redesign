@@ -1,0 +1,262 @@
+@import "_variables.less";
+
+.rlp-hero-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/homepage/rlp-hero-large.png);
+    .hero-row;
+
+    .hero-contents {
+        max-width: 1030px;
+        margin: auto;
+        text-align: center;
+        @media (min-width: 320px) {
+            padding: 60px 15px;
+        }
+
+        @media (min-width: 500px) {
+            padding: 120px 15px;
+        }
+
+        @media (min-width: 768px) {
+            padding: 175px 15px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 200px 15px;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 250px 15px;
+        }
+
+        .hero-btn-container {
+            width: 100%;
+            margin: 15px 0px 0px 0px;
+
+            @media (min-width: 320px) {
+                max-width: 100%;
+            }
+
+            @media (min-width: 500px) {
+                max-width: 280px;
+            }
+
+            .btn {
+                .responsive-btn;
+            }
+        }
+    }
+}
+
+.how-can-we-help-row, .primary-footer {
+    .help-header-container, .footer-header-container {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .header-separator {
+        margin: 0px auto 35px auto;
+    }
+
+    .top-row {
+        @media (min-width: 320px) {
+            margin: 0px;
+        }
+
+        @media (min-width: 768px) {
+            margin: 0px 0px 40px 0px;
+        }
+    }
+
+    .bottom-row {
+        margin: 0px; 
+    }
+
+    .help-col {
+        text-align: center;
+
+        @media (min-width: 320px) {
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 500px) {
+            max-width: 400px;
+            margin: 0px auto 30px auto;
+        }
+
+        @media (min-width: 768px) {
+            min-height: initial;
+            margin-bottom: 0px;
+            max-width: inherit;
+        }
+
+        @media (min-width: 850px) {
+            min-height: 175px;
+        }
+
+        @media (min-width: 992px) {
+            min-height: initial;
+        }
+
+        @media (min-width: 1200px) {
+            min-height: 150px;
+        }
+
+        @media (min-width: 1400px) {
+            min-height: initial;
+        }
+
+        p {
+            margin-bottom: 0px;
+        }
+
+        .icon-container {
+            i {
+                color: @teal;
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .bottom-row {
+        .help-col:last-child {
+            margin-bottom: 0px !important;
+        }
+    }
+}
+
+.do-you-qualify {
+    .blue-gradient;
+
+    h3 {
+        line-height: 31px;
+
+        @media (min-width: 320px) {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            text-align: left;
+            height: 42px;
+            vertical-align: middle;
+            display: table-cell;
+        }
+    }
+
+    .do-you-qualify-btn-container{
+        @media (min-width: 320px) {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        @media (min-width: 768px) {
+            text-align: right;
+            margin-top: 0px;
+        }
+
+        .btn {
+            .responsive-btn;
+        }
+    }
+}
+
+.testimonials-container {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/homepage/testimonials-large.png);
+
+    .testimonials-overlay {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: @dark-overlay;
+        height: 100%;
+        width: 100%;
+    }
+
+    h2 {
+        color: #fff !important;
+    }
+
+    .header-separator {
+        background-color: #fff !important;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 3px;
+        position: relative;
+
+        h4 {
+            font-size: 18px;
+            color: @teal;
+            font-family: @header-font;
+            margin-top: 0px;
+        }
+
+        .testimonial-name-group {
+            h6 {
+                margin: 0px;
+            }
+
+            .profile-image {
+                width: 40px;
+                border-radius: 50%;
+                height: 40px;
+            }
+
+            .name-container {
+                display: inline-block;
+                padding-left: 10px;
+
+                p {
+                    margin-bottom: 2px;
+                    color: @teal;
+                }
+            }
+
+            img {
+                display: inline-block;
+                margin-top: -23px;
+            }
+        }
+    }
+
+    .owl-dots {
+        margin-top: 20px !important;
+    }
+
+    .owl-dot.active span {
+        background: @teal !important;
+    }
+
+    .owl-carousel {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+.primary-footer {
+    text-align: center;
+
+    h6 {
+        font-size: 22px;
+        color: @body-copy;
+        font-family: @footer-text;
+
+        span {
+            font-family: @header-font;
+        }
+    }
+
+    p {
+        max-width: 650px;
+        margin: auto;
+    }
+}
